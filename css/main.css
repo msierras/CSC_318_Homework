@@ -8,3 +8,10 @@
     padding: 10px;
     background-color: aliceblue;
 }
+
+.img_settings {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 350px;
+}
