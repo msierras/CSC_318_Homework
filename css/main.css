@@ -15,3 +15,15 @@
     margin-right: auto;
     height: 350px;
 }
+
+@media (max-width: 500px) {
+    .nav h1 {
+        color: green;
+    }
+}
+
+@media (max-height: 500px) {
+    .nav{
+        background-color: green;
+    }
+}
