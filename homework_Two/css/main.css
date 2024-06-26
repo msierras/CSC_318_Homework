@@ -45,3 +45,12 @@ li{
 #credits_Title{
     padding-left: 15%;
 }
+
+input {
+    margin-bottom: 5px;
+}
+
+input:focus{
+    border-color: #00b894; 
+    box-shadow: 0 0 10px #00b894; 
+}
