@@ -16,3 +16,32 @@
     margin-top: 10px;
     text-align: center;
 }
+
+#column_Titles{
+    width: 100%;
+    background-color: aqua;
+}
+
+li{
+    list-style-type: none;
+}
+ 
+#column_Titles ul {
+    text-align: left;
+}
+
+#column_Titles ul li{
+    display: inline-block
+}
+
+#course_Title{
+    padding-left: 18%;
+}
+
+#grade_Title{
+   padding-left: 15%;
+}
+
+#credits_Title{
+    padding-left: 15%;
+}
