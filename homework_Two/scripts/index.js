@@ -400,8 +400,24 @@ function calculateGPA() {
     let totalGradePoints = letter_Grade_One * credits_One + letter_Grade_Two * credits_Two + letter_Grade_Three * credits_Three + letter_Grade_Four * credits_Four + letter_Grade_Five * credits_Five + letter_Grade_Six * credits_Six + letter_Grade_Seven * credits_Seven + letter_Grade_Eight * credits_Eight;
     
     let gpa = totalGradePoints / totalCredits;
-    alert(gpa);
+
+    
+
+    let gpaResult = document.getElementById('gpa_Result');
+
+    if(isNaN(gpa)){
+        alert("You didn't write anything!");
+        return; // Stops from NaN being written on GPA
+    }
+    
+    gpaResult.textContent = parseFloat(Math.round(gpa*100) / 100);
+    
 }
 
+const reset_Button = document.getElementById('reset_Button');
 
 
+reset_Button.onclick = function(){
+    let gpaResult = document.getElementById('gpa_Result');
+    gpaResult.textContent = " ";
+}
