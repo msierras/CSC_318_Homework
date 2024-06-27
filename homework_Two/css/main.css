@@ -60,8 +60,12 @@ input:focus{
 
 #reset_Button{
     padding: 5px;
+    background-color: gray;
+    color: white;
 }
 
 #submit_Button{
     padding: 5px;
+    background-color: green;
+    color: white;
 }
