@@ -1,73 +1,67 @@
-#calculator_Div{
+#calculator_Div {
     height: 900px;
     width: 100%;
-    border:  solid;
+    border: solid;
     background-color: #f0ecd4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.entry_Space{
-    margin: 10px;
-    height: 90px;
-    width: 97.5%;
-    border: 3px solid;
-}
-
-#form{
-    margin-top: 10px;
+#column_Titles {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-#column_Titles{
+#column_Titles div {
+    flex: 1;
+}
+
+#form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-li{
-    list-style-type: none;
-}
- 
-#column_Titles ul {
-    text-align: left;
-}
-
-#column_Titles ul li{
-    display: inline-block
+.entry_Row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 
-#course_Title{
-    padding-left: 18%;
+.entry_Row input {
+    width: 30%;
 }
 
-#grade_Title{
-   padding-left: 15%;
+input:focus {
+    border-color: #00b894;
+    box-shadow: 0 0 10px #00b894;
 }
 
-#credits_Title{
-    padding-left: 15%;
+#bottom_Buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
 }
 
-input {
-    margin-bottom: 5px;
-}
-
-input:focus{
-    border-color: #00b894; 
-    box-shadow: 0 0 10px #00b894; 
-}
-
-#bottom_Buttons{
-    padding-right: 45.7% ;
-}
-
-#reset_Button{
+#reset_Button, #submit_Button {
     padding: 5px;
     border-radius: 8px;
+    margin-right: 10px;
+}
+
+#reset_Button {
     background-color: gray;
     color: white;
 }
 
-#submit_Button{
-    padding: 5px;
-    border-radius: 8px;
+#submit_Button {
     background-color: green;
     color: white;
 }
